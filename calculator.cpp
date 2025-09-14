@@ -8,19 +8,22 @@ using namespace std;
 
 class Calculator {
 public: 
+    // This function will handle the calculations
     void startCalculation() {
         double currentNum;
         char operation;
-
-       runningTotal = 0.0;
+        // This variable will hold the ongoing total of the calculation.
+        runningTotal = 0.0;
 
         cout << "Enter a number to begin: ";
 
+        //Handle if input is valid number
         if (! (cin >> runningTotal)) {
             handleInvalidInput();
             return;
         }
 
+        // While loop that will keep running until user inputs = or q
         while (true) {
             cout << "Enter an operator (+, -, *, /) or '=' to finish, or 'Q' to quit: ";
             cin  >> operation;
@@ -69,6 +72,7 @@ public:
         }
     }
 
+    // Function that will display history 
     void displayHistory() const {
         if (history.empty()) {
             cout << "History is empty";
@@ -80,6 +84,7 @@ public:
         }
     }
 
+    // Saves history to a file
     void saveHistoryToFile (const string& filename) const {
         ofstream file(filename);
         if (file.is_open()) {
@@ -93,6 +98,7 @@ public:
         }
     }
 
+    // Loads the history from file
     void loadHistoryFromFile(const string& filename) {
         ifstream file(filename);
         if (file.is_open()) {
