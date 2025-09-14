@@ -7,6 +7,19 @@
 using namespace std;
 
 class Calculator {
+
+// Stores history and 
+private:
+    vector<double> history;
+    double runningTotal;
+
+    void handleInvalidInput(){
+        cin.clear();
+        cin.ignore(numeric_limits <std:: streamsize>::max(), '\n');
+        cerr << "Invalid input. Try again and enter a number: ";
+    }
+
+
 public: 
     // This function will handle the calculations
     void startCalculation() {
@@ -114,17 +127,6 @@ public:
         }
     }
 
-
-
-private:
-    vector<double> history;
-    double runningTotal;
-
-    void handleInvalidInput(){
-        cin.clear();
-        cin.ignore(numeric_limits <std:: streamsize>::max(), '\n');
-        cerr << "Invalid input. Try again and enter a number: ";
-    }
 };
 
 int main() {
