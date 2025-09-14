@@ -1,6 +1,6 @@
 # Overview
 
-My objective for this project was to deepen my understanding of the C++ language by applying its core concepts to build a practical application.
+My objective for this project was to learn and deepen my understanding of the C++ language by applying its core concepts to build a practical application.
 
 [Calculator Demo](https://youtu.be/VCYYCg5oiRk)
 
