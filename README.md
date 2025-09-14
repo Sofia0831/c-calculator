@@ -2,7 +2,7 @@
 
 My objective for this project was to deepen my understanding of the C++ language by applying its core concepts to build a practical application.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Calculator Demo](https://youtu.be/VCYYCg5oiRk)
 
 # Development Environment
 
