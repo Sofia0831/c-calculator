@@ -8,7 +8,7 @@ using namespace std;
 
 class Calculator {
 
-// Stores history and 
+// Stores history
 private:
     vector<double> history;
     double runningTotal;
